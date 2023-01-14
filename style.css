@@ -1,0 +1,25 @@
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: url(source/fondoV2.jpg);
+}
+
+.Texto-Centralizado {
+    text-align: center;
+    color: lightseagreen;
+}
+
+h1 {
+    font-size: 2.5em;
+    padding: 1em 0;
+    font-weight: bold;
+}
+
+.cuerpo {
+    padding: 0.5em 2em;
+    display: block;
+}
+
+#elTexto {
+    margin: 0 2.5em;
+}
