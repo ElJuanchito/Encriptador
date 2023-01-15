@@ -1,4 +1,5 @@
-function traductor (texto) {
+
+function codificar(texto) {
     /*
     La letra "e" es convertida para "enter"
     La letra "i" es convertida para "imes"
@@ -18,31 +19,36 @@ function traductor (texto) {
         let ch = txt.charAt(i);
 
         //let ch = '/' + txt.charAt(i) + '/ig';
-       // alert("" + ch)
+        // alert("" + ch)
 
         for (let j = 0; j < letras.length; j++) {
-            if (ch == letras[j])
-            {
+            if (ch == letras[j]) {
                 ch = clave[j];
             }
         }
 
         text += ch;
-        
+
     }
 
     return text;
 }
 
-
-let boton = document.querySelector("enviar");
-
-
 function mostrar() {
 
     let texto = document.getElementById("elTexto").value;
-    alert("" + texto);
+    let codigo = codificar(texto);
+    document.getElementById("Resultado").innerHTML = ("" + codigo);
+
 }
+
+function copy() {
+    let texto = document.getElementById("elTexto").value;
+    let codigo = codificar(texto);
+    navigator.clipboard.writeText(codigo);
+}
+
+
 
 
 
