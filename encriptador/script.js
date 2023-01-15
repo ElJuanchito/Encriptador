@@ -1,12 +1,5 @@
 
 function codificar(texto) {
-    /*
-    La letra "e" es convertida para "enter"
-    La letra "i" es convertida para "imes"
-    La letra "a" es convertida para "ai"
-    La letra "o" es convertida para "ober"
-    La letra "u" es convertida para "ufat"
-    */
     let letras = ["e", "i", "a", "o", "u"];
     let clave = ["enter", "imes", "ai", "ober", "ufat"];
 
@@ -17,9 +10,6 @@ function codificar(texto) {
     for (let i = 0; i < txt.length; i++) {
 
         let ch = txt.charAt(i);
-
-        //let ch = '/' + txt.charAt(i) + '/ig';
-        // alert("" + ch)
 
         for (let j = 0; j < letras.length; j++) {
             if (ch == letras[j]) {
@@ -34,22 +24,46 @@ function codificar(texto) {
     return text;
 }
 
-function mostrar() {
+function decodificar(texto) {
+    let letras = ["e", "i", "a", "o", "u"];
+    let clave = ["enter", "imes", "ai", "ober", "ufat"];
+    let txt = "" + texto;
+    let text = "";
 
+    for (let i = 0; i < txt.length; i++) {
+
+        for (let j = 0; j < letras.length; j++) {
+
+            let re = new RegExp(clave[j]);
+
+            if (re.test(txt)) {
+
+                txt = txt.replace(re, letras[j]);
+            }
+
+        }
+
+
+    }
+
+    text = txt;
+
+    return text;
+}
+
+function cambioC() {
+    document.getElementById("Resultado").value = "";
     let texto = document.getElementById("elTexto").value;
     let codigo = codificar(texto);
-    document.getElementById("Resultado").innerHTML = ("" + codigo);
+    document.getElementById("Resultado").value = (codigo);
 
 }
 
-function copy() {
-    let texto = document.getElementById("elTexto").value;
-    let codigo = codificar(texto);
-    navigator.clipboard.writeText(codigo);
+function cambioD() {
+    document.getElementById("elTexto").value = "";
+    let texto = document.getElementById("Resultado").value;
+    let codigo = decodificar(texto);
+    document.getElementById("elTexto").value = (codigo);
 }
-
-
-
-
 
 

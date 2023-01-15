@@ -63,7 +63,7 @@ img {
     border-radius: 1em;
 }
 
-.enviar {
+.action1 {
     display: block;
     margin: 2em 0 8em 0;
     padding: 0.5em 4.2em;
@@ -72,7 +72,7 @@ img {
     background: #FFFFFF;
 }
 
-.enviar:hover {
+.action1:hover {
     border-color: aqua;
     cursor: pointer;
 }
@@ -80,7 +80,7 @@ img {
 .caja2 {
     position: relative;
     left: 18em;
-    bottom: 27.45em;
+    bottom: 27.4em;
 }
 
 #Resultado {
@@ -90,17 +90,17 @@ img {
     border-radius: 1em;
 }
 
-.copiar {
+.action2 {
     display: block;
     margin: 2em 0 8em 0;
-    padding: 0.5em 4.8em;
+    padding: 0.5em 3.5em;
     border: 0.15em solid #9f9c9c;
     border-radius: 0.5em;
     background: #FFFFFF;
     transition: 800ms;
 }
 
-.copiar:hover {
+.action2:hover {
     border-color: aqua;
     cursor: pointer;
 }
