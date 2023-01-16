@@ -34,7 +34,7 @@ main {
     display: inline-block;
     width: 40%;
     position: relative;
-    bottom: 34em;
+    bottom: 30em;
     text-align: justify;
     padding: 0 2em;
 }
@@ -45,6 +45,10 @@ main {
 
 .lista {
     padding-bottom: 1em;
+}
+
+.dato {
+    padding-top: 2em;
 }
 
 img {
