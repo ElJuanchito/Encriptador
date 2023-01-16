@@ -74,10 +74,14 @@ img {
     border: 0.15em solid #9f9c9c;
     border-radius: 0.5em;
     background: #FFFFFF;
+    transition: 400ms background;
 }
 
 .action1:hover {
-    border-color: aqua;
+    border-color: #2fa2ea;
+    background: #87cefa;
+    font-weight: bold;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -101,11 +105,14 @@ img {
     border: 0.15em solid #9f9c9c;
     border-radius: 0.5em;
     background: #FFFFFF;
-    transition: 800ms;
+    transition: 400ms background;
 }
 
 .action2:hover {
-    border-color: aqua;
+    border-color: #2fa2ea;
+    background: #87cefa;
+    font-weight: bold;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -117,8 +124,17 @@ img {
 
 .copiar input {
     padding: 0.5em 3.1em;
-    border: 0.15em solid lightskyblue;
+    border: 0.15em solid #9f9c9c;
     border-radius: 0.5em;
+    transition: 400ms background;
+}
+
+.copiar input:hover {
+    border-color: #2fa2ea;
+    background: #87cefa;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .inferior {
