@@ -34,7 +34,7 @@ main {
     display: inline-block;
     width: 40%;
     position: relative;
-    bottom: 30em;
+    bottom: 38.8em;
     text-align: justify;
     padding: 0 2em;
 }
@@ -107,6 +107,18 @@ img {
 .action2:hover {
     border-color: aqua;
     cursor: pointer;
+}
+
+.copiar {
+    position: relative;
+    bottom: 33.5em;
+
+}
+
+.copiar input {
+    padding: 0.5em 3.1em;
+    border: 0.15em solid lightskyblue;
+    border-radius: 0.5em;
 }
 
 .inferior {

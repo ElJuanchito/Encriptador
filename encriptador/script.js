@@ -66,4 +66,9 @@ function cambioD() {
     document.getElementById("elTexto").value = (codigo);
 }
 
+function copy() {
+    let texto = document.getElementById("Resultado").value;
+    navigator.clipboard.writeText(texto);
+}
+
 
